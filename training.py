@@ -69,23 +69,3 @@ n_x.save('x')
 n_y.save('y')
 n_z.save('z')
 
-'''
-TETA_1 = 0
-TETA_2 = 0
-TETA_3 = 0
-
-Input_Angles = numpy.asarray([TETA_1, TETA_2, TETA_3])
-Inputs = (numpy.asfarray(Input_Angles)/180) + 0.01
-#n_x.load()
-#n_y.load()
-#n_z.load()
-Outputs_x = (n_x.__query__(Inputs)).round(2)
-Outputs_y = (n_y.__query__(Inputs)).round(2)
-Outputs_z = (n_z.__query__(Inputs)).round(2)
-label_x = (numpy.argmax(Outputs_x) - 200) / 100
-label_y = (numpy.argmax(Outputs_y) - 200) / 100
-label_z = (numpy.argmax(Outputs_z) - 100) / 100
-print("Networks answer: ", label_x, label_y, label_z)
-DH = ForwardKinematics(TETA_1, TETA_2, TETA_3)
-print("Forward Kinematics answer: ", DH.__calculate__()[:3])
-'''
