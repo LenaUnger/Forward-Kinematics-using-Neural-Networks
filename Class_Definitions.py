@@ -5,10 +5,6 @@ import math
 # Import scipy.special package for the sigmoid function
 import scipy.special
 
-# Set the way, numpy objects (like matrices, arrays) are displayed to floats with 2 decimals
-np.set_printoptions(precision=2, formatter={'float_kind': '{:0.2f}'.format})
-
-
 class ForwardKinematics:
     """
     This class contains the calculation of the position of the endeffector with matrix multiplication.
