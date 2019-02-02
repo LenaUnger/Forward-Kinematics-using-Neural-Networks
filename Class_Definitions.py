@@ -98,7 +98,7 @@ class NeuralNetwork:
     """
     This class contains the neural network. The number of layers is set to three - one input layer,
     one hidden layer and one output layer. The number of neurons per layer as well as the learning rate
-    is variable in this class, set to a certain value for each object.
+    is variable in this class, set to a certain number for each object.
     """
 
     def __init__(self, inputnodes, hiddennodes, outputnodes, learningrate):
