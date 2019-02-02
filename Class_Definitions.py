@@ -124,9 +124,9 @@ class NeuralNetwork:
 
         # The initialized weights are drawn from a normal distribution with the standard deviation being
         # the square root of the number of neurons from the hidden layer (self.wih) or the output layer
-        # (self.who)[Rashid, p. 92]. Regarding the size of the matrix: There are as many rows as there
-        # are neurons in the layer to which the weights are connected ans as many columns as there are
-        # neurons in the layer from where the weights come.
+        # (self.who). Regarding the size of the matrix: There are as many rows as there are neurons in 
+        # the layer to which the weights are connected ans as many columns as there are neurons in the 
+        # layer from where the weights come.
         # self.wih is the weight matrix between the input and the hidden layer.
         self.wih = np.random.normal(0.0, pow(self.inodes, -0.5), (self.hnodes, self.inodes))
         # self.who is the weight matrix between the hidden and the output layer.
