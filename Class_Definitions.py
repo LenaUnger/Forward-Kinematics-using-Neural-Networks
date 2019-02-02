@@ -186,8 +186,11 @@ class NeuralNetwork:
 
     def save(self, name):
         '''
-        This method stores the trained weight matrices in the file 'saved_wih.npy' (self.wih)
-        or 'saved_who.npy' (self.who).
+        This method stores the trained weight matrices in the file 'name_wih.npy' (self.wih)
+        or 'name_who.npy' (self.who).
+        '''
+        '''
+        name: Define how the weight matrices should be named.
         '''
         np.save(name + '_wih.npy', self.wih)
         np.save(name + '_who.npy', self.who)
@@ -197,6 +200,9 @@ class NeuralNetwork:
         '''
         This method loads the previously saved weight matrices to either train them further
         or let the trained neural network solve a problem.
+        '''
+        '''
+        name: The name of the matrix which should be loaded.
         '''
         self.wih = np.load(name + '_wih.npy')
         self.who = np.load(name + '_who.npy')
