@@ -75,7 +75,8 @@ for e in range(epochs):
             # Calculate the real result for the randomly chosen input with homogenous transformation matrices.
             testresult = manipulator.calculate(testangles[0], testangles[1], testangles[2])[:3]
 
-            # Calculate the euclidean distance between network and function output.
+            # Calculate the euclidean distance between the result of the neural network and
+            # the homogenous transformation matrix.
             error = distance.euclidean(testguess, testresult)
             # Save the errors in an array.
             errorlist.append(error)
