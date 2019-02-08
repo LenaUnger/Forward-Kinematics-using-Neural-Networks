@@ -78,7 +78,7 @@ for e in range(epochs):
 
             # Calculate the euclidean distance between the result of the neural network and
             # the homogenous transformation matrix.
-                        error = distance.euclidean(testguess, testresult)
+            error = distance.euclidean(testguess, testresult)
             # Save the errors in an array.
             errorlist.append(error)
 
