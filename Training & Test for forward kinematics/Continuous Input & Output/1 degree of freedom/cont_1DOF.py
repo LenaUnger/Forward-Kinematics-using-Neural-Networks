@@ -95,7 +95,7 @@ for e in range(epochs):
 
     else:
         pass
-pass
+    pass
 
 # Create an array being the size of the number of runs, the network is trained with and split
 # into sections, the network is tested. This array is the x-axis of the plot showing the faults.
