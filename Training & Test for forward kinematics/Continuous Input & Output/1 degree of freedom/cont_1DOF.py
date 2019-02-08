@@ -3,7 +3,7 @@ This training- and test-file trains a network to calculate the forward kinematic
 standard manipulator with 1 degree of freedom using continuous inputs and outputs. After a 
 certain amount of trainings, the program runs a test with 500 different angle combinations, 
 calculating the mean error and the standard deviation. When training is finished, two weight 
-matrices with the trained values are saved in the same path as the training file and an error 
+matrices with the trained values are saved within the same path as the training file and an error 
 function is plotted.
 '''
 from Class_Definitions import NeuralNetwork, ForwardKinematics
