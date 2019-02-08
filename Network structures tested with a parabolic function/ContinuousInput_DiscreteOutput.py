@@ -78,6 +78,8 @@ for e in range(epochs+1):
 
 # Plot the real function.
 plt.plot(input, 3 * input * (1 - input), label='y = 3x*(1-x)', color='k')
+plt.xlabel('x')
+plt.ylabel('y')
 plt.legend()
 # Show all previously created plots in one window.
 plt.show()
@@ -89,6 +91,8 @@ l = np.arange(0, epochs+1, epochs / 5)
 plt.plot(l, meanerrorlist, label='mean error')
 # Plot the standard deviation for each test run.
 plt.errorbar(l, meanerrorlist, yerr=deviationlist, label='standard deviation', capsize=4, ecolor='r')
+plt.xlabel('number of training data')
+plt.ylabel('error')
 plt.legend()
 # Show the mean errors and standard deviations in one window.
 plt.show()
