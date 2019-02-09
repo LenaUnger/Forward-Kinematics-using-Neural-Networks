@@ -36,7 +36,7 @@ epochs = 160000
 test = epochs / 10
 
 # Train the network for epochs-number of times
-for e in range(epochs):
+for e in range(epochs+1):
     # For each training, 3 random angles are the input of the net. For 1 degree of freedom, only
     # Theta 3 is a random number out of the array angles. Theta 1 and 2 are 0.
     trainingangles = np.asarray([0, 0, random.choice(angles)])
