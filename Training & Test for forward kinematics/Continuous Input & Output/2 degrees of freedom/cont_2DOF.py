@@ -35,7 +35,7 @@ epochs = 200000
 test = epochs / 10
 
 # Train the network for epochs-number of times
-for e in range(epochs):
+for e in range(epochs+1):
 
     # For each training, 3 random angles are the input of the net. For 2 degrees of freedom, Theta 2
     # and 3 are random numbers out of the array angles. Theta 1 is 0.
