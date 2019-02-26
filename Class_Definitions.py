@@ -112,8 +112,8 @@ class NeuralNetwork:
         hiddennodes: Sets number of hidden neurons.
         outputnodes: Sets number of output neurons.
         learningrate: Sets the value of the learning rate of the neural network. The learning rate
-        has to exceed 0 and fall below 1. A smaller learning rate means the steps the neural network
-        takes when training with the gradient descend are smaller, bigger vice versa. 
+        has to exceed 0. A smaller learning rate means the steps the neural network takes when 
+        training with the gradient descend are smaller, bigger vice versa. 
         """
 
         self.inodes = inputnodes
